@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#150D0B"
+    android:id="@+id/componentMaterial"
+    android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="207dp"
+            android:layout_height="134dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="88dp"
+            android:contentDescription="logoCinema"
+            android:src="@drawable/logo_cinema" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nameRegister"
+                android:layout_width="343dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:background="@drawable/border_input"
+                android:hint="Имя"
+                android:paddingStart="16dp"
+                android:shadowColor="#AFAFAF"
+                android:textColor="#AFAFAF"
+                android:textColorHint="#AFAFAF" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/familyRegister"
+                android:layout_width="343dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/border_input"
+                android:hint="Фамилия"
+                android:paddingStart="16dp"
+                android:shadowColor="#AFAFAF"
+                android:textColor="#AFAFAF"
+                android:textColorHint="#AFAFAF" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailRegister"
+                android:layout_width="343dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/border_input"
+                android:hint="E-mail"
+                android:paddingStart="16dp"
+                android:shadowColor="#AFAFAF"
+                android:textColor="#AFAFAF"
+                android:textColorHint="#AFAFAF" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordRegister"
+                android:layout_width="343dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/border_input"
+                android:hint="Пароль"
+                android:paddingStart="16dp"
+                android:inputType="textPassword"
+                android:shadowColor="#AFAFAF"
+                android:textColor="#AFAFAF"
+                android:textColorHint="#AFAFAF" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/repeatPassword"
+                android:layout_width="343dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/border_input"
+                android:hint="Повторите пароль"
+                android:paddingStart="16dp"
+                android:inputType="textPassword"
+                android:shadowColor="#AFAFAF"
+                android:textColor="#AFAFAF"
+                android:textColorHint="#AFAFAF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonRegister"
+                android:layout_width="343dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#EF3A01"
+                android:text="Зарегистрироваться" />
+
+            <Button
+                android:id="@+id/buttonHaveAccount"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="343dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="У меня уже есть аккаунт"
+                android:textColor="#EF3A01"
+                app:strokeColor="#A8A8A8" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
